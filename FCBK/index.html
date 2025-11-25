@@ -1,0 +1,116 @@
+CAUTION: This email originates from outside UKZN. Please exercise caution before clicking on links or opening attachments. If you are unsure about the sender or content, please contact the ICS Helpdesk for assistance.
+
+full code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1877f2;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box; /* It's good practice to include this */
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            height: 40px;
+            background-color: #1877f2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px; /* Added margin for separation */
+            font-weight: bold;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #166fe5;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1877f2;
+            font-size: 14px;
+            display: block; /* Make the link take its own line */
+            margin-top: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+
+        .create-account {
+            background-color: #42b72a;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .create-account:hover {
+            background-color: #3ba026;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h1>facebook</h1>
+            <form>
+                <input type="text" placeholder="Email address or phone number" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+            <a href="#">Forgot password?</a>
+            <hr>
+            <button class="create-account">Create New Account</button>
+        </div>
+    </div>
+</body>
+</html>
